@@ -1,0 +1,16 @@
+[mysqld]
+innodb_flush_log_at_trx_commit = 2
+innodb_flush_method = O_DIRECT
+transaction-isolation = READ-COMMITTED
+query_cache_size = 128M
+query_cache_limit = 2M
+sort_buffer_size = 10M
+read_rnd_buffer_size = 10M
+table_open_cache = 512
+innodb_buffer_pool_size = 512M
+innodb_buffer_pool_instances = 2
+tmp_table_size = 1024M
+max_heap_table_size = 1024M
+max-connect-errors = 10000
+table_definition_cache = 2048
+thread_cache_size = 4
